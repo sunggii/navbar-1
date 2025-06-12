@@ -1,7 +1,7 @@
-# what I learn 
+# what I learned
 ## script
 * onclick แบบที่ 1 ไม่ค่อยเข้าใจวิธีเขียน function แต่สะดวกเพราะไม่ต้องไปประกาศชื่อ function ที่ html
-```
+```js
 let toggleBtn = document.querySelector('.toggle-btn') /*ตัวจิ้มปุ่ม bar*/ 
 let toggleBtnIcon = document.querySelector('.toggle-btn i') /* จิ้มตัว icon*/ 
 let dropdownMenu = document.querySelector('.dropdown-menu')
@@ -18,13 +18,13 @@ toggleBtn.onclick = function () {
 ```
 
 * onclick แบบที่ 2 เป็นแบบที่เข้าใจ เพราะเรียนมาแบบนี้
-```
+```html
 <!-- Responsive -->
             <div class="toggle-btn " onclick="clickBtn()">
                 <i class="fa-solid fa-bars"></i>
             </div>
 ```
-```
+```js
 function clickBtn() {
     let toggleBtn = document.querySelector('.toggle-btn') /*ตัวจิ้มปุ่ม bar*/ 
     let dropdownMenu = document.querySelector('.dropdown-menu')
@@ -43,7 +43,7 @@ function clickBtn() {
 โดยทั่วไป 'open' เป็นคลาสที่เราใช้ใน CSS เพื่อกำหนดสไตล์ตอนที่เมนูเปิด เช่น:
 
 css
-```
+```css
 .dropdown {
   display: none;
 }
@@ -64,7 +64,7 @@ css
 ## icon
 * อยากได้ icon ไปที่ [fontawesome](https://fontawesome.com/search)
 * แต่อย่าลืมวางลิ้ง CDN ไว้ที่ ```<head></head> ```
-```
+```html
 <!-- link cdn เพราะจะใช้ icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 ```
